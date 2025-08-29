@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/main.css'>
+   
+</head>
+<body>
+     <h1>Corrida Secreta dos Gnomos de Jardim</h1>
+    
+    <div class="form-container">
+        <h2>Cadastrar Novo Gnomo</h2>
+        <div class="input-group">
+            <label for="nome-gnomo">Nome do Gnomo:</label>
+            <input type="text" id="nome-gnomo" placeholder="Digite o nome..." required>
+        </div>
+        <div class="input-group">
+            <label for="tipo-gnomo">Tipo de Gnomo:</label>
+            <select id="tipo-gnomo">
+                <option value="GnomoVeloz">luigi</option>
+                <option value="GnomoAzarado">mario</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="cor-chapeu">Cor do Chapéu:</label>
+            <select id="cor-chapeu">
+                <option value="verde">Verde (Sorte)</option>
+                <option value="azul">Azul (Neutro)</option>
+                <option value="vermelho">Vermelho (Azar)</option>
+            </select>
+        </div>
+        <div class="btn-container">
+            <button id="adicionar-gnomo">Adicionar Gnomo</button>
+            <button id="iniciar-corrida" disabled>Iniciar Corrida</button>
+        </div>
+    </div>
+
+    <div class="pista-container">
+        <h2>Pista de Corrida</h2>
+        <div id="pistas-area">
+            </div>
+        <p id="mensagem-vencedor" class="mensagem"></p>
+    </div>
+     <script src='assets/main.js'></script>
+</body>
+</html>
